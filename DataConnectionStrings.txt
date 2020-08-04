@@ -1,0 +1,1 @@
+Data Source=\\TLS-TUL-SGNLG\pipe\MSSQL$SQLEXPRESS\sql\query;Initial Catalog=Signalog_TUL;Persist Security Info=True;User ID=sa;Password=4rathuThEzUswuv

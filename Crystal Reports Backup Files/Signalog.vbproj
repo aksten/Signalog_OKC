@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5AF6A14B-7950-47AE-8295-5D87A0663EE2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Signalog.My.MyApplication</StartupObject>
+    <RootNamespace>Signalog</RootNamespace>
+    <AssemblyName>Signalog</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ManifestCertificateThumbprint>30C762AC02B681AAB1E06B851556C81B256FA938</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Signalog_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>J:\Signalog Setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Signalog</ProductName>
+    <PublisherName>Signalog Inc.</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Signalog.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Signalog.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action_Taken.Designer.vb">
+      <DependentUpon>Action_Taken.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Action_Taken.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity List Maintenance.Designer.vb">
+      <DependentUpon>Activity List Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Activity List Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Area Maintenance.Designer.vb">
+      <DependentUpon>Area Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Area Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arrival Condition.Designer.vb">
+      <DependentUpon>Arrival Condition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arrival Condition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deferred Action.Designer.vb">
+      <DependentUpon>Deferred Action.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Deferred Action.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departing Condition Notes.Designer.vb">
+      <DependentUpon>Departing Condition Notes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Departing Condition Notes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispatch By Maintenance.Designer.vb">
+      <DependentUpon>Dispatch By Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch By Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Control.Designer.vb">
+      <DependentUpon>Inventory Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Control.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clear Edit Locks.Designer.vb">
+      <DependentUpon>Clear Edit Locks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clear Edit Locks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Dispatch By Report.Designer.vb">
+      <DependentUpon>Dispatch By Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dispatch By Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Field Maintenance Activity.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Field Maintenance Activity.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report Viewer.Designer.vb">
+      <DependentUpon>Report Viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report Viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Dispatch By.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dispatch By.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Employees Maintenance.Designer.vb">
+      <DependentUpon>Employees Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employees Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Field Maintenance Activity Report.Designer.vb">
+      <DependentUpon>Field Maintenance Activity Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Field Maintenance Activity Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Holiday List Maintenance.Designer.vb">
+      <DependentUpon>Holiday List Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday List Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Holidays Maintenance.Designer.vb">
+      <DependentUpon>Holidays Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Holidays Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Maintenance.Designer.vb">
+      <DependentUpon>Inventory Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location Type Description Maintenance.Designer.vb">
+      <DependentUpon>Location Type Description Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Location Type Description Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locations Maintenance.Designer.vb">
+      <DependentUpon>Locations Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Locations Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manufacturer List Maintenance.Designer.vb">
+      <DependentUpon>Manufacturer List Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturer List Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Parts List Maintenance.Designer.vb">
+      <DependentUpon>Parts List Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Parts List Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parts.Designer.vb">
+      <DependentUpon>Parts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Parts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Problem Reported.Designer.vb">
+      <DependentUpon>Problem Reported.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Problem Reported.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reindex.Designer.vb">
+      <DependentUpon>Reindex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reindex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restore Status.Designer.vb">
+      <DependentUpon>Restore Status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Restore Status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignalogDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SignalogDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SignalogDataSet.vb">
+      <DependentUpon>SignalogDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trouble Report.Designer.vb">
+      <DependentUpon>Trouble Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trouble Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateACT2.Designer.vb">
+      <DependentUpon>UpdateACT2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateACT2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle List Maintenance.Designer.vb">
+      <DependentUpon>Vehicle List Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle List Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Action_Taken.resx">
+      <DependentUpon>Action_Taken.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity List Maintenance.resx">
+      <DependentUpon>Activity List Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Area Maintenance.resx">
+      <DependentUpon>Area Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arrival Condition.resx">
+      <DependentUpon>Arrival Condition.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deferred Action.resx">
+      <DependentUpon>Deferred Action.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departing Condition Notes.resx">
+      <DependentUpon>Departing Condition Notes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatch By Maintenance.resx">
+      <DependentUpon>Dispatch By Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Control.resx">
+      <DependentUpon>Inventory Control.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clear Edit Locks.resx">
+      <DependentUpon>Clear Edit Locks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Dispatch By Report.resx">
+      <DependentUpon>Dispatch By Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Field Maintenance Activity.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Field Maintenance Activity.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report Viewer.resx">
+      <DependentUpon>Report Viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Dispatch By.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Dispatch By.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees Maintenance.resx">
+      <DependentUpon>Employees Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Field Maintenance Activity Report.resx">
+      <DependentUpon>Field Maintenance Activity Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Holiday List Maintenance.resx">
+      <DependentUpon>Holiday List Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Holidays Maintenance.resx">
+      <DependentUpon>Holidays Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Maintenance.resx">
+      <DependentUpon>Inventory Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location Type Description Maintenance.resx">
+      <DependentUpon>Location Type Description Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations Maintenance.resx">
+      <DependentUpon>Locations Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturer List Maintenance.resx">
+      <DependentUpon>Manufacturer List Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parts List Maintenance.resx">
+      <DependentUpon>Parts List Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parts.resx">
+      <DependentUpon>Parts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problem Reported.resx">
+      <DependentUpon>Problem Reported.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reindex.resx">
+      <DependentUpon>Reindex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restore Status.resx">
+      <DependentUpon>Restore Status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trouble Report.resx">
+      <DependentUpon>Trouble Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateACT2.resx">
+      <DependentUpon>UpdateACT2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle List Maintenance.resx">
+      <DependentUpon>Vehicle List Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SignalogDataSet.xsc">
+      <DependentUpon>SignalogDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SignalogDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SignalogDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SignalogDataSet.xss">
+      <DependentUpon>SignalogDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.10.5">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports Basic for Visual Studio 2008 %28x86, x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.8.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2008 Report Viewer</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\STLogo.jpg" />
+    <None Include="Signalog_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
